@@ -3869,6 +3869,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Finish
+    clip: {fileID: 8300000, guid: 8632a1be610174d449c56271736f1094, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   _musicOutput: {fileID: 24300002, guid: bd7ed3f71acee0848b47099a17e5ac9f, type: 2}
 --- !u!1 &1950152536
 GameObject:

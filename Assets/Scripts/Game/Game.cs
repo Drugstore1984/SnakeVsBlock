@@ -8,6 +8,7 @@ public class Game : MonoBehaviour
     [SerializeField] private int _startLevelLength = 5;
     private LevelGenerator generator;
     [SerializeField] private TextMeshProUGUI _textLevel;
+    private AudioPlayer _player;
     public enum State
     {
         Playing,
@@ -18,6 +19,7 @@ public class Game : MonoBehaviour
     private void Start()
     {
         generator = FindObjectOfType<LevelGenerator>();
+        _player = FindObjectOfType<AudioPlayer>();
     }
     public void OnPlayerDied()
     {
@@ -33,6 +35,7 @@ public class Game : MonoBehaviour
         CurrentState = State.Won;
         _wonMenu.SetActive(true);
         LevelIndex++;
+        _player.Play("Finish");
     }
     public int LevelIndex
     {
