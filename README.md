@@ -6,5 +6,5 @@
 
 ## Installation
 
-* Run `git clone https://github.com/Drugstore1984/HelixJumpClone.git`
+* Run `https://github.com/Drugstore1984/SnakeVsBlock.git`
 * Open project in Unity
