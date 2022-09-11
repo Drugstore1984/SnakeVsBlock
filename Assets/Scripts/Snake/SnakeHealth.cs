@@ -16,7 +16,7 @@ public class SnakeHealth : MonoBehaviour
     private void Update()
     {
         health = snakeTail.TailsCount();
-        _textMeshPro.text = (health + 1).ToString();
+        _textMeshPro.text = health.ToString();
 
         if (snakeTail.isDead)
         {
