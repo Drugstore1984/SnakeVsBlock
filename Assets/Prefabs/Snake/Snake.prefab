@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 0}
-  _sideSpeed: 5
+  _sideSpeed: 8
   _forwardSpeed: 9
 --- !u!114 &4279716103836954376
 MonoBehaviour:
