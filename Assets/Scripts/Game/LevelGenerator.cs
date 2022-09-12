@@ -6,6 +6,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private GameObject[] _levelPlatform;
     [SerializeField] private GameObject _finishPlatform;
     private GameObject levelParent;
+    private ProgressBar progressBar;
     private void SpawnPlatform(GameObject prefab)
     {
         GameObject temp = Instantiate(prefab, transform.position, Quaternion.Euler(0, -90, 0));
@@ -30,5 +31,13 @@ public class LevelGenerator : MonoBehaviour
         }
 
         SpawnPlatform(_finishPlatform);
+
+        GetProgressBar();
     }
+    private void GetProgressBar()
+    {
+        progressBar = FindObjectOfType<ProgressBar>();
+        progressBar.SetProgressBarParameters();
+    }
+
 }

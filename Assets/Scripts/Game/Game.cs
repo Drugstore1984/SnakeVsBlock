@@ -7,7 +7,7 @@ public class Game : MonoBehaviour
     [SerializeField] private GameObject _wonMenu;
     [SerializeField] private int _startLevelLength = 5;
     private LevelGenerator generator;
-    [SerializeField] private TextMeshProUGUI _textLevel;
+    [SerializeField] private TextMeshProUGUI _currentLevel,_nextLevel;
     private AudioPlayer _player;
     public enum State
     {
@@ -60,6 +60,7 @@ public class Game : MonoBehaviour
     }
     private void LevelText()
     {
-        _textLevel.text = $"Level {LevelIndex + 1}";
+        _currentLevel.text = (LevelIndex + 1).ToString();
+        _nextLevel.text = (LevelIndex + 2).ToString();
     }
 }
