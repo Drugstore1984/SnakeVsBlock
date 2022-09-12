@@ -40,7 +40,7 @@ public class SnakeMove : MonoBehaviour
     }
     private void MoveByMouse()
     {
-        _rb.velocity = new Vector3(_direction.x * _sideSpeed, 0, _forwardSpeed);
+        _rb.velocity = new Vector3(_direction.x * _sideSpeed * Time.deltaTime, 0, _forwardSpeed * Time.deltaTime);
     }
     public void SnakeStop()
     {
