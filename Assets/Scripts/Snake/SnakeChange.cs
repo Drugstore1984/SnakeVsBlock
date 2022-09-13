@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.Audio;
-
 public class SnakeChange : MonoBehaviour
 {
     private SnakeTail snakeTail;
