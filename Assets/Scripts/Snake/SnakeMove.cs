@@ -18,7 +18,7 @@ public class SnakeMove : MonoBehaviour
         _cmCamera = FindObjectOfType<CinemachineVirtualCamera>();
         _cmCamera.Follow = transform;
     }
-    void Update()
+    private void FixedUpdate()
     {
         GetDirection();
         MoveByMouse();
@@ -40,7 +40,7 @@ public class SnakeMove : MonoBehaviour
     }
     private void MoveByMouse()
     {
-        _rb.velocity = new Vector3(_direction.x * _sideSpeed * Time.deltaTime, 0, _forwardSpeed * Time.deltaTime);
+        _rb.velocity = new Vector3(_direction.x * _sideSpeed, 0, _forwardSpeed);
     }
     public void SnakeStop()
     {
