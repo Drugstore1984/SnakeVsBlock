@@ -1,6 +1,7 @@
 using Cinemachine;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class SnakeMove : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
